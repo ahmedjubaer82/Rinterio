@@ -43,11 +43,7 @@
             <div class="navbar bg-transparent pt-10">
                 <div class="navbar-start">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" aria-haspopup="true" aria-expanded="false" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
+                        
                         <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-black text-xl">
                             <li><a class="font-bold">Home</a></li>
                             <li><a>Services</a></li>
@@ -71,16 +67,21 @@
                     </ul>
                 </div>
                 <div class="navbar-end gap-3">
-                    <div class="py-4 px-5 rounded-full bg-white border ">
+                    <div class="py-4 px-5 rounded-full bg-white border sm:hidden">
                         <i class="fa-solid fa-magnifying-glass text-xl"></i>
                     </div>
-                    <div class="py-4 px-5 rounded-full bg-white border ">
+                    <div class="py-4 px-5 rounded-full bg-white border sm:hidden">
                         <i class="fa-solid fa-cart-shopping text-xl"></i>
                     </div>
-                    <button class="py-3 px-4 rounded-full bg-btnclr flex justify-center items-center gap-3">
+                    <button class="py-3 px-4 rounded-full bg-btnclr flex justify-center items-center gap-3 sm:hidden">
                         <h2 class="font-extrabold">Book Consult</h2>
                         <i class="fa-solid fa-arrow-up-right-dots text-xl rounded-full bg-black text-white py-1 px-[7px]"></i>
                     </button>
+                </div>
+                <div tabindex="0" role="button" aria-haspopup="true" aria-expanded="false" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
                 </div>
             </div>
         </nav>
